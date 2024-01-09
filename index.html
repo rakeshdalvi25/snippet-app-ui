@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CoderDocs - Bootstrap Documentation Template For Software Projects</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Bootstrap Documentation Template For Software Developers">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+	<style>
+		.tech-icons {
+    font-size: 1.875rem;
+    color: #4550e6;}
+	.tech-icons .fa-bootstrap {
+    color: #7952b3;
+}
+.tech-icons .fa-html5, .tech-icons .fa-html5-alt {
+    color: #de6e3c;
+}
+.tech-icons .fa-sass {
+    color: #bf6b97;
+}
+.tech-icons .fa-sketch {
+    color: #fa6400;
+}
+		.avatar {
+			vertical-align: middle;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin-left: -10px;
+		}
+
+		@media (min-width: 992px) {
+			.hero-figure {
+				max-width: 100%;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.hero-figure {
+				max-width: 460px;
+			}
+		}
+
+		.hero-figure {
+			max-width: 100%;
+		}
+
+		.avatar1 {
+			vertical-align: middle;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			margin-left: -10px;
+		}
+
+		.swiper {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.multiline .text--truncated {
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+		}
+		.singleline .text--truncated {
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-line-clamp: 1;
+			-webkit-box-orient: vertical;
+		}
+		
+		
+	</style>
+</head>
+
+<body>
+	<header class="header fixed-top">
+
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+				<div class="docs-logo-wrapper">
+					<div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2"
+								src="assets/images/coderdocs-logo.svg" alt="logo"><span class="logo-text">Coder<span
+									class="text-alt">Docs</span></span></a></div>
+				</div>
+				<!--//docs-logo-wrapper-->
+				<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+					</ul>
+					<!--//social-list-->
+					<a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/"
+						class="btn btn-primary d-none d-lg-flex">Download</a>
+				</div>
+				<!--//docs-top-utilities-->
+			</div>
+			<!--//container-->
+		</div>
+		<!--//branding-->
+	</header>
+	<!--//header-->
+
+	<!--//page-header-->
+	<div class="page-content">
+		<section class="hero-section py-3 py-md-5 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-7 pt-3 mb-5 mb-lg-0">
+						<h1 class="site-headline font-weight-bold mb-3">Code snippets for Front-end
+							designers & developers</h1>
+						<div class="site-tagline mb-4">Bulid your website faster and easier with ready made code snippets. <span id="typewriter"
+								class="text-primary font-weight-bold"><span class="Typewriter__wrapper">JS
+									Library</span><span class="Typewriter__cursor">|</span></span>.</div>
+						<div class="cta-btns mb-lg-3">
+							<a class="btn btn-primary me-2 mb-3" href="pricing.html">Browse Snippets <i class="fas fa-arrow-alt-circle-right me-2"></i></a>
+							<a class="btn btn-light mb-3" href="docs.html">Learn More
+								<i class="fas fa-arrow-alt-circle-right ms-2"></i></a>
+						</div>
+						<div class="category-avatar mt-4 mx-3">
+							<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+							<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+							<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+							<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+							<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+	
+						</div>
+						<p class="about__description mt-2">Accelerate your frontend development with these framework
+							time-saving snippets..</p>
+					</div>
+					<div class="col-12 col-lg-5 text-center">
+						<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+						type="module"></script>
+
+					<dotlottie-player src="https://lottie.host/7a198cb1-aee7-435c-bf7c-8439d07a3bcd/Cmu7ioZZCT.json"
+						background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay>
+					</dotlottie-player>
+					</div>
+					
+				</div>
+				<!--//row-->
+			</div>
+		</section>
+		<section class="container">
+			<div class="docs-overview py-5">
+				<div class="text-center">
+					<p class="h3">Boost Your CSS Workflow with These Handy Tools</p>
+					<p class="fs-5">Explore a collection of CSS tools that will streamline your <br>development process and help you create stunning websites</p>
+
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-3 py-3">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="card-title mb-3">
+									
+									<!--//card-icon-holder-->
+									<span class="card-title-text mt-4">Tools Collection</span>
+								</h5>
+								<div class="card-text">
+									Color palette generators, box shadow, online code editor...
+								</div>
+								<div class="pt-3 text-center my-2">
+									<a class="btn btn-light" href="docs.html">View Docs<svg class="svg-inline--fa fa-circle-right ms-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1l99.9 107.1c3.5 3.8 5.5 8.7 5.5 13.8s-2 10.1-5.5 13.8L294.6 376.9c-4.2 4.5-10.1 7.1-16.3 7.1C266 384 256 374 256 361.7l0-57.7-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-57.7c0-12.3 10-22.3 22.3-22.3c6.2 0 12.1 2.6 16.3 7.1z"></path></svg><!-- <i class="fas fa-arrow-alt-circle-right ms-2"></i> Font Awesome fontawesome.com --></a>
+								</div>
+								<img src="assets/images/css-tools.png" class="card-img-bottom" alt="...">
+								<a class="card-link-mask" href="docs-page.html#section-2"></a>
+							</div>
+							<!--//card-body-->
+						</div>
+						<!--//card-->
+					</div>
+					<!--//col-->
+					<div class="col-12 col-lg-3 py-3">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="card-title mb-3">
+									
+									<!--//card-icon-holder-->
+									<span class="card-title-text mt-4">Tools Collection</span>
+								</h5>
+								<div class="card-text">
+									Color palette generators, box shadow, online code editor...
+								</div>
+								<div class="pt-3 text-center my-2">
+									<a class="btn btn-light" href="docs.html">View Docs<svg class="svg-inline--fa fa-circle-right ms-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1l99.9 107.1c3.5 3.8 5.5 8.7 5.5 13.8s-2 10.1-5.5 13.8L294.6 376.9c-4.2 4.5-10.1 7.1-16.3 7.1C266 384 256 374 256 361.7l0-57.7-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-57.7c0-12.3 10-22.3 22.3-22.3c6.2 0 12.1 2.6 16.3 7.1z"></path></svg><!-- <i class="fas fa-arrow-alt-circle-right ms-2"></i> Font Awesome fontawesome.com --></a>
+								</div>
+								<img src="assets/images/css-tools.png" class="card-img-bottom" alt="...">
+								<a class="card-link-mask" href="docs-page.html#section-2"></a>
+							</div>
+							<!--//card-body-->
+						</div>
+						<!--//card-->
+					</div>
+					<!--//col-->
+					<div class="col-12 col-lg-3 py-3">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="card-title mb-3">
+									
+									<!--//card-icon-holder-->
+									<span class="card-title-text mt-4">Tools Collection</span>
+								</h5>
+								<div class="card-text">
+									Color palette generators, box shadow, online code editor...
+								</div>
+								<div class="pt-3 text-center my-2">
+									<a class="btn btn-light" href="docs.html">View Docs<svg class="svg-inline--fa fa-circle-right ms-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1l99.9 107.1c3.5 3.8 5.5 8.7 5.5 13.8s-2 10.1-5.5 13.8L294.6 376.9c-4.2 4.5-10.1 7.1-16.3 7.1C266 384 256 374 256 361.7l0-57.7-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-57.7c0-12.3 10-22.3 22.3-22.3c6.2 0 12.1 2.6 16.3 7.1z"></path></svg><!-- <i class="fas fa-arrow-alt-circle-right ms-2"></i> Font Awesome fontawesome.com --></a>
+								</div>
+								<img src="assets/images/css-tools.png" class="card-img-bottom" alt="...">
+								<a class="card-link-mask" href="docs-page.html#section-2"></a>
+							</div>
+							<!--//card-body-->
+						</div>
+						<!--//card-->
+					</div>
+					<!--//col-->
+					<div class="col-12 col-lg-3 py-3">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="card-title mb-3">
+									
+									<!--//card-icon-holder-->
+									<span class="card-title-text mt-4">Tools Collection</span>
+								</h5>
+								<div class="card-text">
+									Color palette generators, box shadow, online code editor...
+								</div>
+								<div class="pt-3 text-center my-2">
+									<a class="btn btn-light" href="docs.html">View Docs<svg class="svg-inline--fa fa-circle-right ms-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1l99.9 107.1c3.5 3.8 5.5 8.7 5.5 13.8s-2 10.1-5.5 13.8L294.6 376.9c-4.2 4.5-10.1 7.1-16.3 7.1C266 384 256 374 256 361.7l0-57.7-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-57.7c0-12.3 10-22.3 22.3-22.3c6.2 0 12.1 2.6 16.3 7.1z"></path></svg><!-- <i class="fas fa-arrow-alt-circle-right ms-2"></i> Font Awesome fontawesome.com --></a>
+								</div>
+								<img src="assets/images/css-tools.png" class="card-img-bottom" alt="...">
+								<a class="card-link-mask" href="docs-page.html#section-2"></a>
+							</div>
+							<!--//card-body-->
+						</div>
+						<!--//card-->
+					</div>
+					
+				</div>
+				<!--//row-->
+			</div>
+			<!--//container-->
+		</section>
+		<!-- Slider main container -->
+		<section class="bg-white pt-5 pb-5">
+			<div class="container">
+				<div class="d-flex bd-highlight container mb-2">
+					<div class="p-2 flex-grow-1 bd-highlight h4 mt-1">Most Viewed Snippets</div>
+	
+					<div class="p-2 bd-highlight ">
+						<div class="btn-group" role="group" aria-label="Basic outlined example">
+							<button type="button" class="btn btn btn-light button-prev mx-1 "><i
+									class='bx bx-chevron-left'></i></button>
+	
+							<button type="button" class="btn btn btn-light button-next mx-1"><i
+									class='bx bx-chevron-right'></i></button>
+						</div>
+					</div>
+				</div>
+	
+				<div class="swiper mySwiper container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="card shadow-sm" style="width: 25rem;">
+								<div class="card-body p-2">
+									<img src="assets/images/test1.png" class="card-img-top img-fluid rounded " alt="...">
+									<div class="card-body">
+										<div class="multiline">
+											<div class="wrapper">
+												<p class="text-start text--truncated h5">
+													Bootstrap 4 Search box for domain names registrar
+													Bootstrap 4 Search box for domain names registrar
+												</p>
+											</div>
+										</div>
+	
+										<div class="d-flex justify-content-around mt-3">
+											<div>
+												<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar"
+													class="avatar1">
+												<span class="fs-6">Docsallover</span>
+											</div>
+											<span class="fs-6 mt-1"><i class="bi bi-eye"></i> 667</span>
+											<span class="fs-6 mt-1"><i class="bi bi-share"></i> Share</span>
+										</div>
+									</div>
+									<a class="card-link-mask" href="docs-page.html#section-1"></a>
+								</div>
+								<!--//card-body-->
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card shadow-sm p-2" style="width: 25rem;">
+								<img src="assets/images/test2.png" class="card-img-top img-fluid  rounded" alt="...">
+								<div class="card-body">
+									<div class="multiline">
+										<div class="wrapper">
+											<p class=" text-start text--truncated h5">
+												Multi step form using bootstrap4 & css
+												Multi step form using bootstrap4 & css
+											</p>
+										</div>
+									</div>
+	
+									<div class="d-flex justify-content-around mt-3">
+										<div>
+											<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar"
+												class="avatar1">
+											<span class="fs-6">Docsallover</span>
+										</div>
+										<span class="fs-6 mt-1"><i class="bi bi-eye"></i> 667</span>
+										<span class="fs-6 mt-1"><i class="bi bi-share"></i> Share</span>
+									</div>
+								</div>
+								<!--//card-body-->
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card shadow-sm p-2" style="width: 25rem;">
+								<img src="assets/images/test2.png" class="card-img-top img-fluid  rounded" alt="...">
+								<div class="card-body">
+									<div class="multiline">
+										<div class="wrapper">
+											<p class=" text-start text--truncated h5">
+												Multi step form using bootstrap4 & css
+												Multi step form using bootstrap4 & css
+											</p>
+										</div>
+									</div>
+	
+									<div class="d-flex justify-content-around mt-3">
+										<div>
+											<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar"
+												class="avatar1">
+											<span class="fs-6">Docsallover</span>
+										</div>
+										<span class="fs-6 mt-1"><i class="bi bi-eye"></i> 667</span>
+										<span class="fs-6 mt-1"><i class="bi bi-share"></i> Share</span>
+									</div>
+								</div>
+								<!--//card-body-->
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card shadow-sm p-2" style="width: 25rem;">
+								<img src="assets/images/test2.png" class="card-img-top img-fluid  rounded" alt="...">
+								<div class="card-body">
+									<div class="multiline">
+										<div class="wrapper">
+											<p class=" text-start text--truncated h5">
+												Multi step form using bootstrap4 & css
+												Multi step form using bootstrap4 & css
+											</p>
+										</div>
+									</div>
+	
+									<div class="d-flex justify-content-around mt-3">
+										<div>
+											<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar"
+												class="avatar1">
+											<span class="fs-6">Docsallover</span>
+										</div>
+										<span class="fs-6"><i class="bi bi-eye"></i> 667</span>
+										<span class="fs-6"><i class="bi bi-share"></i> Share</span>
+									</div>
+								</div>
+								<!--//card-body-->
+							</div>
+						</div>
+	
+					</div>
+	
+				</div>
+				<div class="pt-3 text-center">
+					<a class="btn btn-light" href="docs.html">View Docs<svg class="svg-inline--fa fa-circle-right ms-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1l99.9 107.1c3.5 3.8 5.5 8.7 5.5 13.8s-2 10.1-5.5 13.8L294.6 376.9c-4.2 4.5-10.1 7.1-16.3 7.1C266 384 256 374 256 361.7l0-57.7-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-57.7c0-12.3 10-22.3 22.3-22.3c6.2 0 12.1 2.6 16.3 7.1z"></path></svg><!-- <i class="fas fa-arrow-alt-circle-right ms-2"></i> Font Awesome fontawesome.com --></a>
+				</div>
+			</div>
+		</section>
+
+		<section class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-5 ms-lg-auto order-md-1 pl-md-5 mb-5 mb-md-0">
+						<div class="content">
+							<h3 class="heading">Frontend code snippets</h3>
+							<div class="desc">
+								<p>Our frontend code snippets are ready-made code solutions for common tasks, you can eliminate repetitive coding, minimize errors, and focus on more creative and complex aspects of your projects.</p>
+								<ul class="list-unstyled py-3 mb-0">
+									<li class="mb-3"><span class="theme-icon-holder me-2"><i class="fas fa-check"></i></span>Save time and effort</li>
+									<li class="mb-3"><span class="theme-icon-holder me-2"><i class="fas fa-check"></i></span>Boost Productivity and Reduce Errors</li>
+									<li class="mb-3"><span class="theme-icon-holder me-2"><i class="fas fa-check"></i></span>Effortlessly customizable</li>
+									
+								</ul>
+								<div class="tech-icons mb-3">
+									<div class="tech-icons mb-3">
+    
+										<i class="fab fa-js-square me-2"></i> 
+										
+										<i class="fab fa-bootstrap me-2"></i> 
+										
+										<i class="fab fa-html5 me-2"></i> 
+										
+										<i class="fab fa-sass me-2"></i> 
+										
+										<i class="fab fa-sketch"></i> 
+									</div>
+									
+								</div><!--//tech-icons-->
+								
+								<div class="cta-link"><a class="btn btn-light" href="#">View Docs<svg class="svg-inline--fa fa-circle-right ms-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1l99.9 107.1c3.5 3.8 5.5 8.7 5.5 13.8s-2 10.1-5.5 13.8L294.6 376.9c-4.2 4.5-10.1 7.1-16.3 7.1C266 384 256 374 256 361.7l0-57.7-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-57.7c0-12.3 10-22.3 22.3-22.3c6.2 0 12.1 2.6 16.3 7.1z"></path></svg><!-- <i class="fas fa-arrow-alt-circle-right ms-2"></i> Font Awesome fontawesome.com --></a></div>
+								
+							</div><!--//desc-->
+							
+						</div><!--//content-->
+					</div><!--//col-->
+					<div class="col-12 col-md-6 order-md-0">
+						<div class="content-figure">
+							<figure class="figure">
+								<img class="rounded shadow-lg img-fluid" src="https://themes.3rdwavemedia.com/coderpro/bs5/2.2/assets/images/features/appify-theme-projects-overview.jpg" alt="">
+							</figure>
+							
+						</div><!--//content-->
+					</div><!--//col-->
+				</div>
+			</div>
+			
+		</section>
+
+		<!-- Slider main container -->
+		<section class="bg-white pt-5 pb-5">
+			<div class="container">
+				<div class="d-flex bd-highlight container mb-2">
+					<div class="p-2 flex-grow-1 bd-highlight h4 mt-1">Latest Snippets</div>
+	
+					<div class="p-2 bd-highlight ">
+						<div class="btn-group" role="group" aria-label="Basic outlined example">
+							<button type="button" class="btn btn btn-light button-prev mx-1 "><i
+									class='bx bx-chevron-left'></i></button>
+	
+							<button type="button" class="btn btn btn-light button-next mx-1"><i
+									class='bx bx-chevron-right'></i></button>
+						</div>
+					</div>
+				</div>
+	
+				<div class="swiper mySwiper container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="card shadow-sm" style="width: 25rem;">
+								<div class="card-body p-2">
+									<img src="assets/images/test1.png" class="card-img-top img-fluid rounded " alt="...">
+									<div class="card-body">
+										<div class="multiline">
+											<div class="wrapper">
+												<p class="text-start text--truncated h5">
+													Bootstrap 4 Search box for domain names registrar
+													Bootstrap 4 Search box for domain names registrar
+												</p>
+											</div>
+										</div>
+	
+										<div class="d-flex justify-content-around mt-3">
+											<div>
+												<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar"
+													class="avatar1">
+												<span class="fs-6">Docsallover</span>
+											</div>
+											<span class="fs-6 mt-1"><i class="bi bi-eye"></i> 667</span>
+											<span class="fs-6 mt-1"><i class="bi bi-share"></i> Share</span>
+										</div>
+									</div>
+									<a class="card-link-mask" href="docs-page.html#section-1"></a>
+								</div>
+								<!--//card-body-->
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card shadow-sm p-2" style="width: 25rem;">
+								<img src="assets/images/test2.png" class="card-img-top img-fluid  rounded" alt="...">
+								<div class="card-body">
+									<div class="multiline">
+										<div class="wrapper">
+											<p class=" text-start text--truncated h5">
+												Multi step form using bootstrap4 & css
+												Multi step form using bootstrap4 & css
+											</p>
+										</div>
+									</div>
+	
+									<div class="d-flex justify-content-around mt-3">
+										<div>
+											<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar"
+												class="avatar1">
+											<span class="fs-6">Docsallover</span>
+										</div>
+										<span class="fs-6 mt-1"><i class="bi bi-eye"></i> 667</span>
+										<span class="fs-6 mt-1"><i class="bi bi-share"></i> Share</span>
+									</div>
+								</div>
+								<!--//card-body-->
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card shadow-sm p-2" style="width: 25rem;">
+								<img src="assets/images/test2.png" class="card-img-top img-fluid  rounded" alt="...">
+								<div class="card-body">
+									<div class="multiline">
+										<div class="wrapper">
+											<p class=" text-start text--truncated h5">
+												Multi step form using bootstrap4 & css
+												Multi step form using bootstrap4 & css
+											</p>
+										</div>
+									</div>
+	
+									<div class="d-flex justify-content-around mt-3">
+										<div>
+											<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar"
+												class="avatar1">
+											<span class="fs-6">Docsallover</span>
+										</div>
+										<span class="fs-6 mt-1"><i class="bi bi-eye"></i> 667</span>
+										<span class="fs-6 mt-1"><i class="bi bi-share"></i> Share</span>
+									</div>
+								</div>
+								<!--//card-body-->
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card shadow-sm p-2" style="width: 25rem;">
+								<img src="assets/images/test2.png" class="card-img-top img-fluid  rounded" alt="...">
+								<div class="card-body">
+									<div class="multiline">
+										<div class="wrapper">
+											<p class=" text-start text--truncated h5">
+												Multi step form using bootstrap4 & css
+												Multi step form using bootstrap4 & css
+											</p>
+										</div>
+									</div>
+	
+									<div class="d-flex justify-content-around mt-3">
+										<div>
+											<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar"
+												class="avatar1">
+											<span class="fs-6">Docsallover</span>
+										</div>
+										<span class="fs-6"><i class="bi bi-eye"></i> 667</span>
+										<span class="fs-6"><i class="bi bi-share"></i> Share</span>
+									</div>
+								</div>
+								<!--//card-body-->
+							</div>
+						</div>
+	
+					</div>
+	
+				</div>
+				<div class="pt-3 text-center">
+					<a class="btn btn-light" href="docs.html">View Docs<svg class="svg-inline--fa fa-circle-right ms-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1l99.9 107.1c3.5 3.8 5.5 8.7 5.5 13.8s-2 10.1-5.5 13.8L294.6 376.9c-4.2 4.5-10.1 7.1-16.3 7.1C266 384 256 374 256 361.7l0-57.7-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-57.7c0-12.3 10-22.3 22.3-22.3c6.2 0 12.1 2.6 16.3 7.1z"></path></svg><!-- <i class="fas fa-arrow-alt-circle-right ms-2"></i> Font Awesome fontawesome.com --></a>
+				</div>
+			</div>
+		</section>
+		
+		<!--//page-content-->
+
+		<section class="cta-section text-center py-5 theme-bg-dark position-relative">
+			<div class="theme-bg-shapes-right"></div>
+			<div class="theme-bg-shapes-left"></div>
+			<div class="container">
+				<h3 class="mb-2 text-white mb-3">Launch Your Software Project Like A Pro</h3>
+				<div class="section-intro text-white mb-3 single-col-max mx-auto">Want to launch your software project
+					and
+					start getting traction from your target users? Check out our premium <a class="text-white"
+						href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-5-startup-template-for-software-projects/">Bootstrap
+						5 startup template CoderPro</a>! It has everything you need to promote your product.</div>
+				<div class="pt-3 text-center">
+					<a class="btn btn-light"
+						href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-5-startup-template-for-software-projects/">Get
+						CoderPro<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+				</div>
+			</div>
+		</section>
+		<!--//cta-section-->
+
+		<footer class="footer">
+
+			<div class="footer-bottom text-center py-5">
+
+				<ul class="social-list list-unstyled pb-4 mb-0">
+					<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+					<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+					<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+					<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+					<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+					<li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+				</ul>
+				<!--//social-list-->
+
+				<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+				<small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"
+						style="color: #fb866a;"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com"
+						target="_blank">Xiaoying Riley</a> for developers</small>
+
+
+			</div>
+
+		</footer>
+
+		<!-- Javascript -->
+		<script src="assets/plugins/popper.min.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+		</script>
+
+		<!-- Page Specific JS -->
+		<script src="assets/plugins/smoothscroll.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+		<script src="assets/js/highlight-custom.js"></script>
+		<script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+		<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+		<script src="assets/js/docs.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				slidesPerView: 3,
+				spaceBetween: 30,
+				loop: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				breakpoints: {
+					320: {
+						slidesPerView: 1,
+						spaceBetween: 30
+					},
+					// when window width is <= 480px     
+					480: {
+						slidesPerView: 1,
+						spaceBetween: 20
+					},
+
+					// when window width is <= 640px     
+					640: {
+						slidesPerView: 3,
+						spaceBetween: 20
+					}
+				},
+				navigation: {
+					nextEl: ".button-next",
+					prevEl: ".button-prev"
+				}
+			});
+		</script>
+		
+</body>
+
+</html>

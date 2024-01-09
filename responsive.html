@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CoderDocs - Bootstrap Documentation Template For Software Projects</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Bootstrap Documentation Template For Software Developers">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ <style>
+	.preview {
+	 overflow: hidden;
+}
+ .preview .device {
+	 position: relative;
+	 width: 680px;
+	 height: 400px;
+	 margin: 0 auto;
+	 border: 1px solid #999;
+}
+ .preview .device, .preview .device:after, .preview .device iframe {
+	 transition: all 0.5s ease;
+}
+ .preview .device iframe {
+	 
+	 border-radius: 1em;
+}
+ .preview .device:after {
+	 content: ' ';
+	 background-color: #444;
+	 position: absolute;
+}
+ .preview .device-desktop {
+	 width: 100%;
+	 height: 40rem;
+	 padding: 1em 1em 5em;
+	 border-radius: 1em;
+}
+ .preview .device-desktop:after {
+	 width: 3em;
+	 height: 3em;
+	 bottom: 1em;
+	 left: 47.5%;
+	 border-radius: 100em;
+}
+ .preview .device-desktop iframe {
+	 width: 100%;
+	 height: 100%;
+}
+ .preview .device-tablet-p {
+	 width: 600px;
+	 height: 700px;
+	 padding: 1em 1em 3em;
+	 border-radius: 1em;
+}
+ .preview .device-tablet-p:after {
+	 width: 1.5em;
+	 height: 1.5em;
+	 bottom: 0.75em;
+	 left: 47%;
+	 border-radius: 100em;
+}
+ .preview .device-tablet-p iframe {
+	 width: 100%;
+	 height: 39rem;
+}
+ .preview .device-tablet-l {
+	 width: 512px;
+	 height: 384px;
+	 padding: 1em 3em 1em 1em;
+	 border-radius: 1em;
+}
+ .preview .device-tablet-l:after {
+	 width: 1.5em;
+	 height: 1.5em;
+	 left: 93.5%;
+	 bottom: 47%;
+	 border-radius: 100em;
+}
+ .preview .device-tablet-l iframe {
+	 width: 1024px;
+	 height: 768px;
+}
+ .preview .device-mobile-p iframe, .preview .device-mobile-l iframe {
+	 
+}
+ .preview .device-mobile-p {
+	 width: 350px;
+	 height: 630px;
+	 padding: 1em 1em 3em;
+	 border-radius: 1em;
+}
+ .preview .device-mobile-p:after {
+	 width: 2em;
+	 height: 2em;
+	 bottom: 0.5em;
+	 left: 45%;
+	 border-radius: 100em;
+}
+ .preview .device-mobile-p iframe {
+	 width: 320px;
+	 height: 560px;
+}
+ .preview .device-mobile-l {
+	 width: 420px;
+	 height: 240px;
+	 padding: 1em 3em 1em 1em;
+	 border-radius: 1em;
+}
+ .preview .device-mobile-l:after {
+	 width: 2em;
+	 height: 2em;
+	 left: 91.5%;
+	 bottom: 45%;
+	 border-radius: 100em;
+}
+ .preview .device-mobile-l iframe {
+	 width: 560px;
+	 height: 320px;
+}
+ .preview iframe {
+	 margin: 0;
+	 border: 0;
+	 transform-origin: 0 0;
+}
+ .devices {
+	 list-style: none;
+	 width: 100%;
+	 text-align: center;
+	 border-bottom: 1px solid #eee;
+	 margin: 0 0 2rem;
+	 padding: 0;
+}
+ .devices > li {
+	 display: inline-block;
+	 line-height: 2em;
+	 margin: 0 1em 0 0;
+}
+
+.floating-btn {
+      position: fixed;
+      top: 33px;
+      left: 20px;
+      z-index: 10;
+    }
+.page-content{
+	margin-top: 0rem;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.page-content{
+	margin-top: -4rem;
+}
+}
+ 
+ </style>
+</head>
+
+<body>
+	
+
+	<!--//page-header-->
+	<div class="page-content pt-sm-4">
+		
+        <section class="preview container-fluid">
+			<a href="snippet-page.html" class="btn btn-primary floating-btn"><i class='bx bx-arrow-back' ></i> Back to code</a>
+            <ul class="devices nav nav-pills d-flex justify-content-center pt-1">
+              <li class="nav-item">
+				<a href="#desktop" class="nav-link active" ><i class='bx bx-desktop' ></i> Desktop</a>
+			  </li>
+              <li class="nav-item"><a href="#tablet-p" class="nav-link"><i class='bx bx-tab'></i> Tablet</a></li>
+              
+              <li class="nav-item"><a href="#mobile-p" class="nav-link "><i class='bx bx-mobile' ></i> Mobile</a></li>
+              
+            </ul>
+            
+            <div class="device device-desktop">
+				
+					<iframe id="result-iframe" width="100%" height="450rem" style="border: none; " allowfullscreen></iframe>
+				
+            </div>
+            
+          </section>
+
+		  <section class="d-none">
+			<div class="tab-content">
+				<div id="result" class="container tab-pane bg-white active" style="margin-top: 1.5rem;"><br>
+					<iframe id="result-iframe" width="100%" height="450rem" style="border: none; " allowfullscreen></iframe>
+				</div>
+				<div id="html-code" class=" tab-pane fade"><br>
+					<div id="container1" style="display: flex;
+					position: relative;
+					text-align: initial;
+					width: auto;
+					height: 30rem; border: 1px solid grey;">
+						<pre id="html-code-pre">
+&#x3C;html lang=&#x22;en&#x22;&#x3E;
+&#x3C;head&#x3E;
+&#x3C;meta charset=&#x22;UTF-8&#x22;&#x3E;
+&#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1.0&#x22;&#x3E;
+&#x3C;title&#x3E;Sidebar&#x3C;/title&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css&#x22;&#x3E;
+
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+&#x3C;div 
+class=&#x22;con-input-file&#x22; 
+&#x3E;
+&#x3C;button onclick=&#x22;handleClickRemove()&#x22; class=&#x22;remove-image&#x22;&#x3E;
+&#x3C;i class=&#x27;bx bx-x&#x27;&#x3E;&#x3C;/i&#x3E;
+&#x3C;/button&#x3E;
+&#x3C;div class=&#x22;con-bg&#x22;&#x3E;
+&#x3C;img class=&#x22;bg&#x22; src=&#x22;&#x22; alt=&#x22;&#x22;&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;img-1&#x22;&#x3E;
+&#x3C;svg id=&#x22;Capa_1&#x22; enable-background=&#x22;new 0 0 510 510&#x22; viewBox=&#x22;0 0 510 510&#x22; xmlns=&#x22;http://www.w3.org/2000/svg&#x22; xmlns:xlink=&#x22;http://www.w3.org/1999/xlink&#x22;&#x3E;&#x3C;linearGradient id=&#x22;lg1&#x22;&#x3E;&#x3C;stop offset=&#x22;0&#x22; stop-color=&#x22;#cdec7a&#x22;/&#x3E;&#x3C;stop offset=&#x22;.2157&#x22; stop-color=&#x22;#b0e995&#x22;/&#x3E;&#x3C;stop offset=&#x22;.5613&#x22; stop-color=&#x22;#87e4bb&#x22;/&#x3E;&#x3C;stop offset=&#x22;.8347&#x22; stop-color=&#x22;#6ee1d2&#x22;/&#x3E;&#x3C;stop offset=&#x22;1&#x22; stop-color=&#x22;#65e0db&#x22;/&#x3E;&#x3C;/linearGradient&#x3E;&#x3C;linearGradient id=&#x22;SVGID_3_&#x22; gradientTransform=&#x22;matrix(.983 -.185 .185 .983 55.608 42.369)&#x22; gradientUnits=&#x22;userSpaceOnUse&#x22; x1=&#x22;15.52&#x22; x2=&#x22;340.888&#x22; xlink:href=&#x22;#lg1&#x22; y1=&#x22;104.705&#x22; y2=&#x22;430.073&#x22;/&#x3E;&#x3C;linearGradient id=&#x22;lg2&#x22;&#x3E;&#x3C;stop offset=&#x22;0&#x22; stop-color=&#x22;#cdec7a&#x22; stop-opacity=&#x22;0&#x22;/&#x3E;&#x3C;stop offset=&#x22;.2354&#x22; stop-color=&#x22;#9ad57d&#x22; stop-opacity=&#x22;.235&#x22;/&#x3E;&#x3C;stop offset=&#x22;.6035&#x22; stop-color=&#x22;#51b482&#x22; stop-opacity=&#x22;.604&#x22;/&#x3E;&#x3C;stop offset=&#x22;.8679&#x22; stop-color=&#x22;#239f85&#x22; stop-opacity=&#x22;.868&#x22;/&#x3E;&#x3C;stop offset=&#x22;1&#x22; stop-color=&#x22;#119786&#x22;/&#x3E;&#x3C;/linearGradient&#x3E;&#x3C;linearGradient id=&#x22;SVGID_4_&#x22; gradientUnits=&#x22;userSpaceOnUse&#x22; x1=&#x22;491.682&#x22; x2=&#x22;450.637&#x22; xlink:href=&#x22;#lg2&#x22; y1=&#x22;256.546&#x22; y2=&#x22;256.546&#x22;/&#x3E;&#x3C;linearGradient id=&#x22;SVGID_5_&#x22; gradientUnits=&#x22;userSpaceOnUse&#x22; x1=&#x22;176.731&#x22; x2=&#x22;176.731&#x22; xlink:href=&#x22;#lg2&#x22; y1=&#x22;466.917&#x22; y2=&#x22;442.601&#x22;/&#x3E;&#x3C;linearGradient id=&#x22;SVGID_6_&#x22; gradientUnits=&#x22;userSpaceOnUse&#x22; x1=&#x22;88.264&#x22; x2=&#x22;413.632&#x22; y1=&#x22;111.753&#x22; y2=&#x22;437.121&#x22;&#x3E;&#x3C;stop offset=&#x22;0&#x22; stop-color=&#x22;#f8f6fb&#x22;/&#x3E;&#x3C;stop offset=&#x22;1&#x22; stop-color=&#x22;#efdcfb&#x22;/&#x3E;&#x3C;/linearGradient&#x3E;&#x3C;linearGradient id=&#x22;SVGID_7_&#x22; gradientUnits=&#x22;userSpaceOnUse&#x22; x1=&#x22;112.768&#x22; x2=&#x22;430.112&#x22; y1=&#x22;101.155&#x22; y2=&#x22;514.021&#x22;&#x3E;&#x3C;stop offset=&#x22;0&#x22; stop-color=&#x22;#18cefb&#x22;/&#x3E;&#x3C;stop offset=&#x22;.2969&#x22; stop-color=&#x22;#2bb9f9&#x22;/&#x3E;&#x3C;stop offset=&#x22;.7345&#x22; stop-color=&#x22;#42a0f7&#x22;/&#x3E;&#x3C;stop offset=&#x22;1&#x22; stop-color=&#x22;#4a97f6&#x22;/&#x3E;&#x3C;/linearGradient&#x3E;&#x3C;linearGradient id=&#x22;SVGID_8_&#x22; gradientUnits=&#x22;userSpaceOnUse&#x22; x1=&#x22;75.588&#x22; x2=&#x22;214.616&#x22; y1=&#x22;316.53&#x22; y2=&#x22;497.406&#x22;&#x3E;&#x3C;stop offset=&#x22;0&#x22; stop-color=&#x22;#cdec7a&#x22;/&#x3E;&#x3C;stop offset=&#x22;.2154&#x22; stop-color=&#x22;#b0e995&#x22; stop-opacity=&#x22;.784&#x22;/&#x3E;&#x3C;stop offset=&#x22;.5604&#x22; stop-color=&#x22;#87e4bb&#x22; stop-opacity=&#x22;.439&#x22;/&#x3E;&#x3C;stop offset=&#x22;.8334&#x22; stop-color=&#x22;#6ee1d2&#x22; stop-opacity=&#x22;.165&#x22;/&#x3E;&#x3C;stop offset=&#x22;.9985&#x22; stop-color=&#x22;#65e0db&#x22; stop-opacity=&#x22;0&#x22;/&#x3E;&#x3C;/linearGradient&#x3E;&#x3C;linearGradient id=&#x22;SVGID_9_&#x22; gradientUnits=&#x22;userSpaceOnUse&#x22; x1=&#x22;198.822&#x22; x2=&#x22;366.499&#x22; xlink:href=&#x22;#lg1&#x22; y1=&#x22;288.474&#x22; y2=&#x22;506.622&#x22;/&#x3E;&#x3C;linearGradient id=&#x22;SVGID_10_&#x22; gradientUnits=&#x22;userSpaceOnUse&#x22; x1=&#x22;117.242&#x22; x2=&#x22;171.618&#x22; y1=&#x22;131.922&#x22; y2=&#x22;202.666&#x22;&#x3E;&#x3C;stop offset=&#x22;0&#x22; stop-color=&#x22;#ffd945&#x22;/&#x3E;&#x3C;stop offset=&#x22;.3043&#x22; stop-color=&#x22;#ffcd3e&#x22;/&#x3E;&#x3C;stop offset=&#x22;.8558&#x22; stop-color=&#x22;#ffad2b&#x22;/&#x3E;&#x3C;stop offset=&#x22;1&#x22; stop-color=&#x22;#ffa325&#x22;/&#x3E;&#x3C;/linearGradient&#x3E;&#x3C;path d=&#x22;m424.01 448.166h-389.245c-18.715 0-33.886-15.171-33.886-33.886v-322.806c0-18.715 15.171-33.886 33.886-33.886h389.245c18.715 0 33.886 15.171 33.886 33.886v322.806c0 18.715-15.171 33.886-33.886 33.886z&#x22; fill=&#x22;url(#SVGID_6_)&#x22;/&#x3E;&#x3C;g&#x3E;&#x3C;path d=&#x22;m392.279 416.326h-325.782c-15.663 0-28.361-12.698-28.361-28.361v-270.175c0-15.663 12.698-28.361 28.361-28.361h325.782c15.663 0 28.361 12.698 28.361 28.361v270.175c0 15.663-12.698 28.361-28.361 28.361z&#x22; fill=&#x22;url(#SVGID_7_)&#x22;/&#x3E;&#x3C;g&#x3E;&#x3C;path d=&#x22;m252.069 416.326h-185.567c-15.666 0-28.37-12.694-28.37-28.359v-44.29l47.082-57.228c15.538-18.903 44.46-18.903 60.009 0l29.315 35.64z&#x22; fill=&#x22;url(#SVGID_8_)&#x22;/&#x3E;&#x3C;path d=&#x22;m420.643 316.75v71.217c0 15.666-12.704 28.359-28.37 28.359h-295.268l77.532-94.237 95.246-115.783c15.538-18.892 44.471-18.892 60.009 0z&#x22; fill=&#x22;url(#SVGID_9_)&#x22;/&#x3E;&#x3C;/g&#x3E;&#x3C;circle cx=&#x22;137.225&#x22; cy=&#x22;157.919&#x22; fill=&#x22;url(#SVGID_10_)&#x22; r=&#x22;40.219&#x22;/&#x3E;&#x3C;/g&#x3E;&#x3C;/g&#x3E;&#x3C;/svg&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;img-2&#x22;&#x3E;
+&#x3C;div class=&#x22;square-1&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;img-3&#x22;&#x3E;
+&#x3C;div class=&#x22;square-2&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;con-text&#x22;&#x3E;
+Drop your image here, or Browse
+&#x3C;/div&#x3E;
+&#x3C;input
+class=&#x22;input&#x22;
+onchange=&#x22;processFile(event)&#x22;
+ondrop=&#x22;dropHandler(event)&#x22; 
+ondragover=&#x22;dragOverHandler(event)&#x22; 
+ondragleave=&#x22;dragLeave(event)&#x22;
+ondragenter=&#x22;dragEnter(event)&#x22;
+ondragenter=&#x22;dragEnter(event)&#x22; type=&#x22;file&#x22; name=&#x22;&#x22; id=&#x22;&#x22;&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;
+						</pre>
+					</div>
+				</div>
+				<div id="css-code" class=" tab-pane fade"><br>
+					<div id="container2" style="display: flex;
+					position: relative;
+					text-align: initial;
+					width: auto;
+					height: 30rem; border: 1px solid grey;">
+						<pre id="css-code-pre">
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap);
+body {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+background: #F1F3F6;
+height: calc(var(--vh, 1vh) * 100);
+overflow: hidden;
+}
+* {
+list-style: none;
+outline: none;
+padding: 0;
+margin: 0;
+font-family: 'Poppins', sans-serif;
+box-sizing: border-box;
+}
+.con-input-file {
+border: 2px dashed rgba(0,0,0,.08);
+border-radius: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+width: 400px;
+height: 400px;
+transition: all .25s ease, border 0s;
+}
+.hasFile {
+border: 0px dashed rgba(0,0,0,0);
+background: rgba(0,0,0,.03);
+}
+.hasFile .img-1, .hasFile .img-2, .hasFile .img-3{
+opacity: 0;
+}
+.hasFile .con-text{
+opacity: 0;
+}
+.hasFile .remove-image {
+opacity: 1;
+visibility: visible;
+transform: scale(1);
+}
+.hasFile .bg {
+transform: scale(1);
+opacity: 1;
+}
+.drop {
+background: rgba(0,0,0,.03);
+border: 2px dashed rgba(0,0,0,0);
+transform: scale(1.05);
+}
+.drop .img-1 svg{
+transform: scale(1);
+}
+.drop .img-2 .square-1{
+transform: scale(.95) rotate(-10deg);
+}
+.drop .img-3 .square-2{
+transform: scale(.9) rotate(10deg);
+}
+.drop .con-text {
+opacity: 0;
+transform: scale(.85) translate(0,-15px);
+}
+.con-input-file input {
+position: relative;
+width: 400px;
+height: 400px;
+z-index: 10;
+opacity: 0;
+display: block;
+}
+.remove-image {
+position: absolute;
+right: 0px;
+top: 0px;
+width: 40px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: transparent;
+border-radius: 50%;
+border: 0px;
+font-size: 1.5rem;
+margin: 10px;
+cursor: pointer;
+z-index: 1500;
+opacity: 0;
+transform: scale(.5);
+visibility: hidden;
+transition: all .25s ease;
+background: #F1F3F6;
+box-shadow: 0px 5px 30px 0px rgba(0,0,0,.08);
+}
+.con-bg {
+position: absolute;
+border-radius: inherit;
+max-width: 100%;
+max-height: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+.bg {
+z-index: 200;
+pointer-events: none;
+transition: all .25s ease;
+opacity: 0;
+transform: scale(.2);
+height: 100%;
+}
+.con-text {
+position: absolute;
+z-index: 100;
+pointer-events: none;
+margin-top: 140px;
+font-weight: 600;
+opacity: .5;
+font-size: .75rem;
+transition: all .25s ease;
+}
+.img-1 {
+display: flex;
+align-items: center;
+justify-content: center;
+transform: translate(-50%, -50%);
+left: 50%;
+top: 50%;
+pointer-events: none;
+}
+.img-1 {
+position: absolute;
+pointer-events: none;
+}
+.img-1 svg {
+width: 100px;
+transition: all .25s ease;
+}
+.img-2 {
+position: absolute;
+z-index: -1;
+pointer-events: none;
+transform: translate(-50%, -50%);
+left: 50%;
+top: 50%;
+}
+.square-1 {
+width: 90px;
+height: 76px;
+background: linear-gradient(0deg, #93e5b0 0%, #65e0db 100%);
+border-radius: 10px;
+margin-top: -10px;
+margin-left: 0px;
+transform: rotate(-10deg);
+pointer-events: none;
+}
+.img-3 {
+position: absolute;
+z-index: -2;
+pointer-events: none;
+transform: translate(-50%, -50%);
+left: 50%;
+top: 50%;
+}
+.square-2 {
+transform: rotate(10deg);
+width: 90px;
+height: 76px;
+background: linear-gradient(90deg, #ffa936 0%, #ff6359 100%);
+border-radius: 10px;
+margin-top: -4px;
+transform: rotate(10deg);
+pointer-events: none;
+}
+						</pre>
+					</div>
+				</div>
+				<div id="js-code" class=" tab-pane fade"><br>
+					<div id="container3" style="display: flex;
+					position: relative;
+					text-align: initial;
+					width: auto;
+					height: 30rem; border: 1px solid grey;">
+						<pre id="js-code-pre">
+const conFile = document.querySelector('.con-input-file')
+const img1 = document.querySelector('.img-1')
+const img2 = document.querySelector('.img-2')
+const img3 = document.querySelector('.img-3')
+const imgFile = document.querySelector('.bg')
+const input = document.querySelector('.input')
+let one = false
+
+function dropHandler(evt) {
+console.log('File(s) dropped');
+conFile.classList.remove('drop')
+anime({
+targets: '.img-1',
+left: `200px`,
+top: `200px`,
+duration: 400
+})
+anime({
+targets: '.img-2',
+left: `200px`,
+top: `200px`,
+duration: 600
+})
+anime({
+targets: '.img-3',
+left: `200px`,
+top: `200px`,
+duration: 800
+})
+}
+
+function dragOverHandler(evt) {
+anime({
+targets: '.img-1',
+left: `${evt.layerX}px`,
+top: `${evt.layerY}px`,
+duration: 200
+})
+anime({
+targets: '.img-2',
+left: `${evt.layerX}px`,
+top: `${evt.layerY}px`,
+duration: 300
+})
+anime({
+targets: '.img-3',
+left: `${evt.layerX}px`,
+top: `${evt.layerY}px`,
+duration: 400
+})
+conFile.classList.add('drop')
+evt.preventDefault();
+}
+
+function dragLeave(evt) {
+conFile.classList.remove('drop')
+setTimeout(() => {
+anime({
+targets: '.img-1',
+left: `200px`,
+top: `200px`,
+duration: 400,
+})
+anime({
+targets: '.img-2',
+left: `200px`,
+top: `200px`,
+duration: 600,
+})
+anime({
+targets: '.img-3',
+left: `200px`,
+top: `200px`,
+duration: 800,
+})
+}, 50);
+} 
+
+function dragEnter(evt) {
+conFile.classList.add('drop')
+}
+
+function processFile (event) {
+function getBase64 (file) {
+const reader = new FileReader()
+reader.readAsDataURL(file)
+reader.onload = function () {
+imgFile.src = reader.result
+conFile.classList.add('hasFile')
+}
+}
+
+const file = event.target.files[0]
+getBase64(file)
+}
+
+function handleClickRemove() {
+conFile.classList.remove('hasFile')
+setTimeout(() => {
+imgFile.src = ''
+}, 250);
+input.type = 'text'
+input.type = 'file'
+}
+						</pre>
+					</div>
+				</div>
+				
+			</div>
+		  </section>
+		
+
+		<!-- Javascript -->
+		<script src="assets/plugins/popper.min.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+		</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.22.3/min/vs/loader.js"></script>
+
+		<!-- Page Specific JS -->
+		<script src="assets/plugins/smoothscroll.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+		<script src="assets/js/highlight-custom.js"></script>
+		<script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+		<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+		<script src="assets/js/docs.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<script>
+			const htmlEditor = document.getElementById('html-code-pre');
+		const cssEditor = document.getElementById('css-code-pre');
+		const jsEditor = document.getElementById('js-code-pre');
+		
+		const resultIframe = document.getElementById('result-iframe');
+		const resultDocument = resultIframe.contentWindow.document;
+		
+		htmlEditor.addEventListener('change', updatePreview);
+		cssEditor.addEventListener('change', updatePreview);
+		jsEditor.addEventListener('change', updatePreview);
+		
+		function updatePreview() {
+		
+		resultDocument.body.innerHTML = `<style>${cssEditor.textContent}</style>` + htmlEditor.textContent;
+		const script = resultDocument.createElement('script');
+		script.textContent = jsEditor.textContent;
+		resultDocument.head.appendChild(script);
+		}
+		
+		updatePreview(); // Update preview on page load
+		
+		</script>
+        <script>
+            (function($) {
+          
+          $(document).ready( function() {
+        
+            $('.devices').on('click', 'a', function() {
+              var device_selected = $(this).attr('href').replace('#', '');
+			   // Remove the 'active' class from all device links
+  $('.devices .nav-link').removeClass('active');
+
+// Add the 'active' class to the clicked device link
+$(this).addClass('active')
+              
+              $('.device').removeClass().addClass('device device-' + device_selected);
+              
+            })
+            
+          });
+        
+        })(jQuery);
+          </script>
+</body>
+
+</html>
